@@ -10,4 +10,5 @@ func main() {
 	fmt.Println(l.Loop())
 	fmt.Println(IfElse())
 	fmt.Println(Switch())
+	fmt.Println(Array())
 }
