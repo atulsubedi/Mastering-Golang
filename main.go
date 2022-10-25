@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/atulsubedi/go-by-example/1-loop"
+	l "github.com/atulsubedi/go-by-example/1-loop"
 )
 
 func main() {
-	fmt.Println(love.Name)
-	fmt.Println(love.Loop())
+	// fmt.Println(l.Name)
+	fmt.Println(l.Loop())
+	fmt.Println(IfElse())
+	fmt.Println(Switch())
 }

@@ -1,10 +1,8 @@
-// 
-
 package main
 
 import "fmt"
 
-func main() {
+func Array() int {
 	var a [5]int
 	fmt.Println("em:",a)
 
@@ -15,8 +13,8 @@ func main() {
 	fmt.Println("get:",a[4])
 	fmt.Println("len:",len(a))
 
-	b := [5]int
+	// b := [5]int
 
-
+	return 0
 
 }
