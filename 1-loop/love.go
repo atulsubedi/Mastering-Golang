@@ -1,10 +1,10 @@
-package main
+package loop
 
 import (
 	"fmt"
 )
-
-func main() {
+var Name = "hello world"
+func Loop() {
 	i := 2
 	for i <= 5 {
 		fmt.Println(i)
