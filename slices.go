@@ -11,7 +11,6 @@ func Slices() int {
 	s[2] = "c"
 	fmt.Println("set:", s)
 	fmt.Println("len:", len(s))
-
 	s = append(s, "d", "e", "f")
 	fmt.Println("append:", s)
 	c := make([]string, len(s))
@@ -28,7 +27,7 @@ func Slices() int {
 	fmt.Println("del:",t)
 	
 	twoD := make([][]int,3)
-	for i:= 0; i<3; i++{
+	for i:= 0; i<=3; i++{
 		innerlen := i+1
 		twoD[i] = make([]int,innerlen)
 		for j:=0; j<innerlen; j++{
