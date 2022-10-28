@@ -14,6 +14,20 @@ func Maps() int {
 	
 
 	v1 := m["k1"]
-	fmt.Println("v1:",v1             )
+	fmt.Println("v1:",v1)
+
+	fmt.Println("len:",len(m))
+
+	// Deleting slices using builtin delete
+
+	delete(m,"k2")
+	fmt.Println("map:",m)
+	
+	_,prs := m["k2"]
+	fmt.Println("prs:",prs)
+
+	n := map[string]int {"boo" : 1 , "foo" : 2 }
+	fmt.Println("map:",n)
+
 	return 0
 }
