@@ -17,6 +17,7 @@ func main() {
 	// fmt.Println(Range())
 	// fmt.Println(Functions())
 	// fmt.Println(multiValue())
-	fmt.Println(Variadic())
+	// fmt.Println(Variadic())
+	fmt.Println(closures())
 
 }
