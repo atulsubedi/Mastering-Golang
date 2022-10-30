@@ -22,7 +22,6 @@ func int_seq () func()int {
 	next_int := int_seq()
 	println(next_int())	
 	println(next_int())
-	println(next_int())
 	
 	next_int2 := int_seq()
 	println(next_int2())
