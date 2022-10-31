@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func userCh() int {
 
 	usCh := make(chan string)
 	go func(){
+		time.Sleep(1*time.Second)
 	usCh <- "chemistry"
 	}()
 

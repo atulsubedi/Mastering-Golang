@@ -23,4 +23,5 @@ func main() {
 	  fmt.Println(Variadic())
 	  fmt.Println(closures())
 	  fmt.Println(recursion())
+	  fmt.Println(userCh())
 }
