@@ -1,2 +1,2 @@
 # Mastering-Golang
-Mastering concepts on go throught examples
+Mastering concepts on go through examples
