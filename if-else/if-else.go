@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Ifelse() int {
+func main() {
 	if 7%2 == 0 {
 		fmt.Println("7 is even number")
 	} else {
@@ -22,5 +22,4 @@ func Ifelse() int {
 	} else {
 		fmt.Println(num, "has multiple digits")
 	}
-	return 0
 }

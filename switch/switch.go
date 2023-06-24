@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func Switch() int {
+func main() {
 	i := 2
 	fmt.Print("Write", i, "as")
 	switch i {
@@ -46,5 +46,4 @@ func Switch() int {
 	whatAmI(1)
 	whatAmI("hey")
 
-	return 0
 }

@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func Slices() int {
+func main() {
 	s := make([]string, 3)
 	fmt.Println("emp:", s)
 
@@ -23,17 +23,16 @@ func Slices() int {
 	l = s[2:]
 	fmt.Println("sl3:", l)
 
-	t := []string{"g","h","i"}
-	fmt.Println("del:",t)
-	
-	twoD := make([][]int,3)
-	for i:= 0; i<=3; i++{
-		innerlen := i+1
-		twoD[i] = make([]int,innerlen)
-		for j:=0; j<innerlen; j++{
-			twoD[i][j] = i+j
+	t := []string{"g", "h", "i"}
+	fmt.Println("del:", t)
+
+	twoD := make([][]int, 3)
+	for i := 0; i <= 3; i++ {
+		innerlen := i + 1
+		twoD[i] = make([]int, innerlen)
+		for j := 0; j < innerlen; j++ {
+			twoD[i][j] = i + j
 		}
 	}
-	fmt.Println("2d:",twoD)
-	return 0
+	fmt.Println("2d:", twoD)
 }

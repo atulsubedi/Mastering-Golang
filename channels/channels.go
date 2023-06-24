@@ -5,17 +5,16 @@ import (
 	"time"
 )
 
-func userCh() int {
+func main() {
 
 	usCh := make(chan string)
-	go func(){
-		time.Sleep(1*time.Second)
-	usCh <- "chemistry"
+	go func() {
+		time.Sleep(1 * time.Second)
+		usCh <- "chemistry"
 	}()
 
-		user := <-usCh
+	user := <-usCh
 
 	fmt.Println(user)
-	return 0
 
 }
