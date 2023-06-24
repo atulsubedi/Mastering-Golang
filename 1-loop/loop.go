@@ -3,8 +3,9 @@ package loop
 import (
 	"fmt"
 )
+
 // var Name = "hello world"
-func Loop() int {
+func main() {
 	i := 2
 	for i <= 5 {
 		fmt.Println(i)
@@ -26,5 +27,4 @@ func Loop() int {
 		fmt.Println(n)
 
 	}
-	return 0
 }
