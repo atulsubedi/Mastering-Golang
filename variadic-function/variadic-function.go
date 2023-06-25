@@ -4,20 +4,20 @@ import (
 	"fmt"
 )
 
-func Multi(nums ...int) int {
-	total := 1
-	for _, num := range nums {
-		// total = total * num
-		total *= num
+func sum(nums ...int) {
+	fmt.Println(nums, " ")
+	total := 0
+
+	for _, v := range nums {
+		total += v
 	}
-	return total
+	fmt.Println(total)
+
 }
 
 func main() {
-	fmt.Println(Multi(1, 2, 3, 4))
+	sum(1, 4, 8)
+	nums := []int{1, 9, 8}
+	sum(nums...)
 
-	// variadic function can be also used in slices
-
-	slice := []int{2, 3, 4, 5}
-	fmt.Println(Multi(slice...))
 }

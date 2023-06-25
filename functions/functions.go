@@ -1,32 +1,23 @@
-// it is a package declaration we can read the code from here
 package main
 
-// this statement import the go package fmt
-import "fmt"
+import (
+	"fmt"
+)
 
-// it is a function for simple addition of two digits
-func plus(a int, b int) int {
-	return a + b
+func sum(n1, n2 int) int {
+	return n1 + n2
 }
 
-// it is a function for addition of three digits
-func plusPlus(a, b, c int) int {
-	return a + b + c
+func plus(a int, b int, c int) int {
+	total := a + b + c
+	fmt.Println("total:", total)
+	return 0
 }
 
-// the func Functions is the entry point for the go code
-// code written here are only executable
 func main() {
+	res := sum(4, 8)
+	fmt.Println("res:", res)
 
-	// the func plus is called here
-	res := plus(1, 2)
-	// it gives the result of the called func plus
-	fmt.Printf("result is:%d\n", res)
-
-	// the func plusPlus is called here
-	res2 := plusPlus(2, 3, 4)
-
-	// it gives the result of the called func plusPlus
-	fmt.Printf("result is:%d\n", res2)
+	plus(3, 8, 0)
 
 }

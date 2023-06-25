@@ -3,29 +3,32 @@ package main
 import "fmt"
 
 func main() {
-
-	numbers := []int{2, 3, 4}
+	nums := []int{1, 4, 5, 8}
 	sum := 0
-	for _, num := range numbers {
+	for _, num := range nums {
 		sum += num
 	}
 	fmt.Println("sum:", sum)
 
-	for i, num := range numbers {
-		if num == 3 {
-			fmt.Println("index:", i)
+	for i, num := range nums {
+		if num == 4 {
+			fmt.Println("index", i)
 		}
 	}
-	dog := map[string]int{"a": 1, "b": 2}
-	for k, v := range dog {
-		fmt.Printf("%s --> %d\n", k, v)
-	}
-	for k := range dog {
-		fmt.Println("k:", k)
+
+	for i, v := range nums {
+		fmt.Println("index:", i, "value", v)
 	}
 
-	for i, c := range "go" {
-		fmt.Println(i, c)
+	// range on maps can be used to iterates over key/value pairs
+
+	kvs := map[string]string{"a": "apple", "b": "banana"}
+	for k, v := range kvs {
+		fmt.Printf("%s -> %s\n", k, v)
+	}
+
+	for k, _ := range kvs {
+		fmt.Printf("key: %s\n", k)
 	}
 
 }
