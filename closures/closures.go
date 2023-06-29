@@ -1,29 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-// creating an anonymous function
-func return_anoyn_func() func(string) {
-	return func(msg string) {
-		fmt.Println(msg)
-	}
-}
-func int_seq() func() int {
+func intSeq() func() int {
 	i := 0
 	return func() int {
 		i++
 		return i
 	}
 }
+
 func main() {
-	// anonymous function declared
-	print_func := return_anoyn_func()
-	print_func("hello i am anonymous function")
+	n := intSeq()
+	fmt.Println(n())
+	fmt.Println(n())
+	fmt.Println(n())
 
-	next_int := int_seq()
-	println(next_int())
-	println(next_int())
+	fmt.Println("this is a breaking point")
 
-	next_int2 := int_seq()
-	println(next_int2())
+	ne := intSeq()
+	fmt.Println(ne())
 }
